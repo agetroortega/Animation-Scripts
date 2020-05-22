@@ -1,9 +1,19 @@
 """
 Toggles between current viewport's camera and perspective.
 
-To use, the the following 2 lines in a hotkey, shelf, etc:
+INSTALL
+Save this in a text file and name it: cam_toggle.py
+(The name is important for the code below to work)
+Put that file in your maya scripts folder, usually under \Documents\maya\scripts
+
+USE IN MAYA
+Put the following 2 lines of code in a shelf button, a hotkey, etc.
+
 import cam_toggle
 cam_toggle.toggleCurrentCamera()
+
+Note: This will not work if you run it from the script editor because it works on active viewports
+the script editor pulls the focus away from the viewports.
 """
 
 import maya.cmds as cmds
