@@ -19,7 +19,7 @@ def curveFromAnim(animatedObject ,startFrame, endFrame, curveName='', cleanCurve
     # current frame to go back to
     currentFrame = cmds.currentTime(q=True) 
     
-    frame_range = xrange(startFrame, endFrame)
+    frame_range = range(startFrame, endFrame)
     
     # points for the curve, dictionary {frmNumber: [p1, p2, p3]}
     points = {}
